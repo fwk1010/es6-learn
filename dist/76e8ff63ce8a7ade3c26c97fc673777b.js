@@ -66,7 +66,11 @@ require = (function (modules, cache, entry) {
   // Override the current require with this new one
   return newRequire;
 })({4:[function(require,module,exports) {
-console.log("hello world");
+"use strict";
+
+var output = 'hello world';
+
+console.log(output);
 },{}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -85,7 +89,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent) {
-  var ws = new WebSocket('ws://localhost:53652/');
+  var ws = new WebSocket('ws://localhost:54176/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
