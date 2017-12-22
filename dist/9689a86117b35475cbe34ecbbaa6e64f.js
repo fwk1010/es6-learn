@@ -65,12 +65,19 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({2:[function(require,module,exports) {
+})({4:[function(require,module,exports) {
 "use strict";
 
-var output = 'hello world';
+var output = 'hello world using let';
 
 console.log(output);
+
+var a = 1;
+
+console.log(a);
+
+// try to change const value
+// a = 0; // throws error : "a" is read-only
 },{}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -190,4 +197,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,2])
+},{}]},{},[0,4])

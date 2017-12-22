@@ -7,12 +7,9 @@
         "start": "parcel index.html",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/fwk1010/es6-learn.git"
-    },
+    "repository": "git+https://github.com/fwk1010/es6-learn.git",
     "keywords": [],
-    "author": "",
+    "author": "fangwk <fwk1010@github.com>",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/fwk1010/es6-learn/issues"

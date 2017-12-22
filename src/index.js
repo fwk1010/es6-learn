@@ -1,3 +1,3 @@
-let output = 'hello world';
+var output = 'hello world';
 
 console.log(output);
